@@ -1,0 +1,26 @@
+
+
+<table border="2">
+    <tr>
+        <td>id</td>
+        <td>namesurname</td>
+        <td>phone</td>
+                <td>Action</td>
+    </tr>
+
+    {% for st in s%}
+<tr>
+    <td>{{st.id}}</td>
+    <td>{{st.namesurname}}</td>
+    <td>{{st.phonenumber}}</td>
+    
+    
+    
+    <td>    <a href="{{path('add')}}"> add account </a>
+    </td>
+
+</tr>
+{%endfor%}
+
+</table>
+  
